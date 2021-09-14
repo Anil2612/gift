@@ -1,0 +1,128 @@
+
+body,html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+:root {
+    --dark-pink: #a13d95;
+    --light-pink: #af5ca6;
+    --light-grey: #faf5fa;
+    --icon-color: invert(29%) sepia(38%) saturate(2174%) hue-rotate(272deg) brightness(95%) contrast(85%);
+}
+
+.container__social {
+    padding-bottom: 40px;
+    margin: 2px;
+    box-shadow: 0px 0px 0px 1px rgba(197,194,194,0.75);
+    background-color: var(--light-grey);  
+}
+
+.container__icon {
+    width: 50px;
+    height: 50px;
+    margin: 20px 5px;
+    cursor: pointer;
+    filter: var(--icon-color);
+}
+
+.container__text {
+    padding: 20px 0px;
+    background-color:  var(--light-grey);
+}
+
+.container__contact {
+    padding: 20px;
+}
+
+.container__contact__detail {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 20px;
+    text-decoration: none !important;
+}
+
+.container__contact__detail:hover {
+    background-color: var(--light-grey);
+}
+
+.container__contact__detail__img__wrapper {
+    padding: 12px;
+    margin: 12px;
+    border: solid grey 1px;
+    border-radius: 50%;
+}
+
+.container__contact__detail__img__wrapper img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    filter: var(--icon-color);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400 !important;
+}
+
+h1 > a {
+    text-decoration: none;
+    color: var(--dark-pink);
+    cursor: pointer;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--dark-pink) !important;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--dark-pink) !important;
+}
+
+hr {
+    margin: 0;
+    border-top: 6px solid var(--light-pink);
+}
+
+.flex--box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    html,body {
+        font-size: 0.5rem;
+    }
+
+    .block--box {
+        display: block !important;
+    }
+
+    .grid--box {
+        display: grid;
+        place-items: center;
+    }
+
+    .container__contact__detail {
+        padding: 10px 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    h1 {
+        padding: 0 10px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
