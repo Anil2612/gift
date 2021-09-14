@@ -13,14 +13,14 @@ body,html {
     --icon-color: invert(29%) sepia(38%) saturate(2174%) hue-rotate(272deg) brightness(95%) contrast(85%);
 }
 
-.container__social {
+.block__social {
     padding-bottom: 40px;
     margin: 2px;
     box-shadow: 0px 0px 0px 1px rgba(197,194,194,0.75);
     background-color: var(--light-grey);  
 }
 
-.container__social__icon {
+.block__social__icon {
     width: 50px;
     height: 50px;
     margin: 20px 5px;
@@ -28,34 +28,34 @@ body,html {
     filter: var(--icon-color);
 }
 
-.container__text {
+.block__text {
     padding: 20px 0px;
     background-color:  var(--light-grey);
 }
 
-.container__contact {
+.block__contact {
     padding: 20px;
 }
 
-.container__contact__detail {
+.block__contact__detail {
     cursor: pointer;
     margin: 0 10px;
     padding: 5px 20px;
     text-decoration: none !important;
 }
 
-.container__contact__detail:hover {
+.block__contact__detail:hover {
     background-color: var(--light-grey);
 }
 
-.container__contact__detail__img__wrapper {
+.block__contact__detail__img__wrapper {
     padding: 12px;
     margin: 12px;
     border: solid grey 1px;
     border-radius: 50%;
 }
 
-.container__contact__detail__img__wrapper img {
+.block__contact__detail__img__wrapper img {
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -115,7 +115,7 @@ hr {
         place-items: center;
     }
 
-    .container__contact__detail {
+    .block__contact__detail {
         padding: 10px 0 !important;
         margin-bottom: 15px !important;
     }
